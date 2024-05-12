@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rumassa.Domain.Entities.Users;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,11 @@ namespace Rumassa.Domain.Entities
         public Guid? OrderId { get; set; }
         public Guid? NewsId { get; set; }
         public short? CategoryId { get; set; }
+        public virtual User User { get; set; }
+        public virtual Order? Order { get; set; }
+        public virtual News? News { get; set; }
+        public virtual Category? Category { get; set; }
+        public virtual List<Review> Reviews { get; set; }
 
     }
 }

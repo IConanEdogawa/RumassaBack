@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Rumassa.Domain.Entities.Users;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,5 +17,7 @@ namespace Rumassa.Domain.Entities
         public string PaymentMethod { get; set; }
         public int TotalAmount { get; set; }
         public Guid? UserId { get; set; }
+        public virtual User? User { get; set; }
+        public virtual List<Product> Products { get; set; }
     }
 }
