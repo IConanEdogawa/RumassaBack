@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Rumassa.Domain\Rumassa.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
