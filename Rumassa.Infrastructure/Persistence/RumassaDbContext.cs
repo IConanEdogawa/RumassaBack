@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using Rumassa.Application.Abstractions;
+using Rumassa.Domain.Entities;
 using Rumassa.Domain.Entities.Users;
 using System;
 using System.Collections.Generic;
@@ -32,9 +35,6 @@ namespace Rumassa.Infrastructure.Persistence
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
-            //modelBuilder.ApplyConfiguration(new AuthorConfiguration());
-
             modelBuilder.Entity<Category>()
                 .HasData(
                     [   new Category{ Id = 1, Name = "Оральные препараты"  },

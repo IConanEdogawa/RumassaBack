@@ -18,6 +18,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\Rumassa.Application\Rumassa.Application.csproj" />
 	  <ProjectReference Include="..\Rumassa.Domain\Rumassa.Domain.csproj" />
 	</ItemGroup>
 
